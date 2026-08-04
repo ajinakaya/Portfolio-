@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-// import Skills from "./components/Skills";
+import Skills from "./components/Skills";
 // import Timeline from "./components/Timeline";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
@@ -44,8 +44,10 @@ export default function Portfolio() {
       <div ref={aboutRef}>
         <About />
       </div>
-      {/* <div ref={sectionRefs.skills}><Skills /></div>
-      <Timeline /> */}
+      <div ref={skillsRef}>
+        <Skills />
+        </div>
+     
       <div ref={projectsRef}>
         <Projects />
       </div>
