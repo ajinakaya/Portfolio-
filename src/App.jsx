@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-// import Timeline from "./components/Timeline";
+import Timeline from "./components/Timeline";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
@@ -12,6 +12,7 @@ export default function Portfolio() {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
+  const timelineRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -47,14 +48,17 @@ export default function Portfolio() {
       <div ref={skillsRef}>
         <Skills />
         </div>
-     
+     <div ref={timelineRef}>
+        <Timeline />
+      </div>
+
       <div ref={projectsRef}>
         <Projects />
       </div>
       <div ref={contactRef}>
         <Contact />
       </div>
-      {/* <Footer /> */}
+     
     </div>
   );
 }
